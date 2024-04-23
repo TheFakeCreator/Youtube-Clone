@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="youtube.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,-25" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,100,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+</head>
+<body>
+    <div id="main">
+
+        <div id="nav">
+            <div id="l-nav" class="navbox">
+                <div id="menu"><span class="material-symbols-outlined" onclick="menuExpand()">
+                    menu
+                    </span></div>
+                <div id="logo" onclick="window.open('https://www.youtube.com/')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052" alt="YouTube">
+                    <h4>YouTube<sup>IN</sup></h4>
+                </div>
+
+            </div>
+            <div id="c-nav" class="navbox">
+                <div id="searchbox"> 
+                    <input type="search" name="searchbar" id="search" placeholder="Search">
+                    <button id="searchb" ><span class="material-symbols-outlined">
+                        search
+                        </span><i class="searchTooltip">Search</i></button>
+                </div>
+                <div id="vcsearch"><span class="material-symbols-outlined">
+                    mic
+                    </span><i class="searchTooltip">Search with your voice</i></div>
+
+            </div>
+            <div id="r-nav" class="navbox">
+                <div id="create">
+                    <span class="material-symbols-sharp">
+                    add_box
+                    </span>
+                </div>
+                <div id="notif"><i class="fa-regular fa-bell"></i></div>
+                <div id="user"></div>
+            </div>
+
+        </div>
+        <div id="page">
+            <div id="l-panel">
+                <div class="lpicon" id="home" active="true" data-wow="1">
+                    <span class="material-symbols-rounded" id="homeico">
+                    home
+                    </span>
+                    <p id="hometext">Home</p>
+                </div>
+                <div class="lpicon" id="shorts" data-wow="2"><span class="material-symbols-rounded" id="shortsico">
+                    autorenew
+                    </span><p id="shortstext">Shorts</p></div>
+                <div class="lpicon" id="subs" data-wow="3"><span class="material-symbols-rounded" id="subsico">
+                    subscriptions
+                    </span><p id="substext">Subscriptions</p></div>
+                <div class="lpicon" id="lib" data-wow="4"><span class="material-symbols-rounded" id="libico">
+                    video_library
+                    </span><p id="libtext">You</p></div>
+
+            </div>
+            <div id="cont">
+                <div id="filter">
+                    <div id="scrollLeft" onclick="scrollTagLeft()"><span class="material-symbols-outlined">
+                        chevron_left
+                        </span></div>
+                    <div class="tag" active="true">All</div>
+                    <div class="tag">Music</div>
+                    <div class="tag">Live</div>
+                    <div class="tag">Tamil Cinema</div>
+                    <div class="tag">Cartoon</div>
+                    <div class="tag">Sketch Funny</div>
+                    <div class="tag">Drawing</div>
+                    <div class="tag">Art</div>
+                    <div class="tag">Gardening</div>
+                    <div class="tag">Programming</div>
+                    <div class="tag">Javascript</div>
+                    <div class="tag">HTML</div>
+                    <div class="tag">CSS</div>
+                    <div class="tag">Cartoon</div>
+                    <div class="tag">Sketch Funny</div>
+                    <div class="tag">Drawing</div>
+                    <div class="tag">Art</div>
+                    <div class="tag">Gardening</div>
+                    <div class="tag">Programming</div>
+                    <div class="tag">Javascript</div>
+                    <div class="tag">HTML</div>
+                    <div class="tag">CSS</div>
+                    <div id="scrollRight" onclick="scrollTagRight()"><span class="material-symbols-outlined">
+                        chevron_right
+                        </span></div>
+                </div>
+                <div id="feed">
+                    <div class="feed-c">
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <a class="channel-name" href="google.com">TechKnowledge</a>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="feed-c">
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="feed-c">
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="feed-c">
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="feed-c">
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                        <div class="feed-vid-cont">
+                            <div class="feed-vid">
+                                <!-- <video src=""></video> -->
+    
+                            </div>
+                            <div class="vid-det-1">
+                                <div class="channel-icon"></div>
+                                <div class="vid-title">Learn Flexbox in 5 minutes | CSS Tutorial | Techknowledge</div>
+                            </div>
+                            <div class="vid-det-2">
+                                <div class="channel-name">TechKnowledge</div>
+                                <div class="vid-stats">36K Views • 12 minutes ago</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

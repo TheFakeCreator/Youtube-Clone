@@ -1,0 +1,5 @@
+1) How to get the clicked div element having same classes = https://stackoverflow.com/questions/54508019/click-on-multiple-elements-same-class-name
+2) Remove attribute = https://www.w3schools.com/jsref/met_element_removeattribute.asp
+3) Get attribute = https://www.w3schools.com/jsref/met_element_getattribute.asp
+4) Scroll to particular coordinates using JS = https://www.geeksforgeeks.org/how-to-scroll-to-an-element-inside-a-div-using-javascript/
+5) How to make a div unselectable by the user = https://stackoverflow.com/questions/924916/is-there-a-way-to-make-a-div-unselectable
